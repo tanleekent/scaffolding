@@ -24,7 +24,7 @@ export default function HeroSection({ badge, highlight, title, subtitle }: HeroS
           />
         </div>
 
-        <div className="z-40 px-4 pb-4 hero-text-glass backdrop-blur-sm pt-4 flex flex-col w-full lg:w-6/12 justify-center lg:pt-24 items-center lg:items-start text-center lg:text-left mb-8 md:mb-0">
+        <div className="z-40 md:z-50 px-4 pb-4 hero-text-glass backdrop-blur-sm pt-4 flex flex-col w-full lg:w-6/12 justify-center lg:pt-24 items-center lg:items-start text-center lg:text-left mb-8 md:mb-0">
             <div className="w-full max-w-md lg:max-w-none flex flex-col items-center lg:items-start justify-center lg:justify-start">
             <span className="brand-pill" data-aos="fade-right" data-aos-once="true">
               {badge}
