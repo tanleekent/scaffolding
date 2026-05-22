@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://777scaffolding.com/sitemap.xml
+Site: https://777scaffolding.com
+Robots: https://777scaffolding.com/robots.txt

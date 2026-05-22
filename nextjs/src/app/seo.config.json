@@ -1,0 +1,27 @@
+{
+  "title": "777 Scaffolding | Quality Scaffolding Solutions in Semenyih",
+  "description": "777 Scaffolding provides high-quality scaffolding products. Fast delivery, certified safety, and expert support.",
+  "openGraph": {
+    "title": "777 Scaffolding | Quality Scaffolding Solutions in Semenyih",
+    "description": "777 Scaffolding provides high-quality scaffolding products. Fast delivery, certified safety, and expert support.",
+    "url": "https://777scaffolding.com",
+    "siteName": "777 Scaffolding",
+    "images": [
+      {
+        "url": "/img/share-image.webp",
+        "width": 1200,
+        "height": 630,
+        "alt": "777 Scaffolding - Quality Scaffolding Solutions in Semenyih"
+      }
+    ],
+    "locale": "en_US",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "site": "@777scaffolding",
+    "title": "777 Scaffolding | Quality Scaffolding Solutions in Semenyih",
+    "description": "777 Scaffolding provides high-quality scaffolding products. Fast delivery, certified safety, and expert support.",
+    "image": "/img/share-image.webp"
+  }
+}

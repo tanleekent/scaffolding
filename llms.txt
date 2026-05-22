@@ -1,0 +1,13 @@
+# LLMs.txt for 777scaffolding.com
+# This file provides guidance for Large Language Models (LLMs) crawling your site.
+# See: https://llmsearch.io/llms-txt-spec for more info
+
+User-agent: *
+Allow: /
+
+# Example: Disallow specific folders or files
+# Disallow: /private/
+# Disallow: /tmp/
+
+# Sitemap reference
+Sitemap: https://777scaffolding.com/sitemap.xml
