@@ -85,7 +85,7 @@ export default function Navbar() {
             Products
           </Link>
           <a
-            className="brand-button px-6 md:px-8 py-3 text-sm text-center"
+            className="nav-whatsapp-button px-6 md:px-8 py-3 text-sm text-center"
             href="https://wa.me/+60182728777?text=Rent%20Scaffolding"
             target="_blank"
             rel="noopener noreferrer"

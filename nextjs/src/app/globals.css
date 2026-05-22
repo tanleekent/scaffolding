@@ -53,6 +53,13 @@ body {
   box-shadow: 0 20px 36px rgba(76, 54, 24, 0.14);
 }
 
+.nav-whatsapp-button {
+  border-radius: 9999px;
+  background-color: #f48c06;
+  color: #ffffff;
+  font-weight: 700;
+}
+
 .brand-button {
   border-radius: 9999px;
   background-color: #f48c06;
