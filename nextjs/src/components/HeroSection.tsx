@@ -24,7 +24,7 @@ export default function HeroSection({ badge, highlight, title, subtitle }: HeroS
           />
         </div>
 
-        <div className="z-40 md:z-50 px-4 pb-4 hero-text-glass backdrop-blur-sm pt-4 flex flex-col w-full lg:w-6/12 justify-center lg:pt-24 items-center lg:items-start text-center lg:text-left mb-8 md:mb-0">
+        <div className="z-40 lg:z-50 px-4 pb-4 hero-text-glass backdrop-blur-sm pt-4 flex flex-col w-full lg:w-6/12 justify-center lg:pt-24 items-center lg:items-start text-center lg:text-left mb-8 md:mb-0">
             <div className="w-full max-w-md lg:max-w-none flex flex-col items-center lg:items-start justify-center lg:justify-start">
             <span className="brand-pill" data-aos="fade-right" data-aos-once="true">
               {badge}
@@ -53,7 +53,7 @@ export default function HeroSection({ badge, highlight, title, subtitle }: HeroS
             data-aos-once="true"
             data-aos-anchor="#hero"
             data-aos-delay="700"
-            className="w-full max-w-md md:flex items-center justify-center lg:justify-start md:space-x-5 mb-6 sm:mb-12"
+            className="w-full max-w-md md:flex items-center justify-center lg:justify-start md:space-x-5 mb-6"
           >
             <a
               href="https://wa.me/+60182728777?text=Rent%20Scaffolding"
@@ -67,7 +67,7 @@ export default function HeroSection({ badge, highlight, title, subtitle }: HeroS
         </div>
       </div>
 
-      <div className="text-white -mt-18 sm:-mt-24 lg:-mt-28 z-41 relative">
+      <div className="text-white -mt-18 sm:-mt-18 md:-mt-10 lg:-mt-28 z-41 relative">
         <svg
           className="xl:h-40 xl:w-full"
           data-name="Layer 1"
