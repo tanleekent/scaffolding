@@ -1,81 +1,22 @@
 import Image from "next/image";
+import HeroSection from "@/components/HeroSection";
 
 export default function Home() {
   return (
     <>
-      {/* Hero section */}
-      <div className="bg-cream overflow-hidden">
-        <div className="max-w-7xl px-8 mx-auto flex flex-col lg:flex-row items-start">
-          {/* Left: image */}
-          <div className="w-full lg:w-6/12 lg:-mt-10 relative h-96 backdrop-blur-sm">
-            <Image
-              data-aos="fade-up"
-              data-aos-once="true"
-              className="w-10/12 mt-14 object-cover mx-auto 2xl:-mb-20"
-              src="/img/scaffolding-main-1.webp"
-              alt="Professional scaffolding rental service with same day delivery"
-              width={600}
-              height={600}
-            />
-          </div>
-          {/* Right: headline */}
-          <div className="z-50 flex flex-col w-full lg:w-6/12 justify-center lg:pt-24 items-start text-center lg:text-left mb-5 md:mb-0">
-            <div className="w-full flex-col items-center justify-center lg:justify-start">
-              <h1
-                data-aos="fade-right"
-                data-aos-once="true"
-                className="my-4 text-5xl font-bold leading-tight text-darken bg-white bg-opacity-90 rounded-lg lg:bg-transparent"
-              >
-                <span className="text-yellow-500">Rent</span> Scaffolding
-              </h1>
-              <div
-                data-aos="fade-down"
-                data-aos-once="true"
-                data-aos-delay="300"
-                className="leading-normal text-2xl mb-8 bg-white bg-opacity-90 rounded-lg lg:bg-transparent"
-              >
-                3-Hours Same Day Instant Delivery
-              </div>
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-once="true"
-              data-aos-delay="700"
-              className="w-full md:flex items-center justify-center lg:justify-start md:space-x-5 mb-12"
-            >
-              <a
-                href="https://wa.me/+60182728777?text=Rent%20Scaffolding"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="z-50 bg-yellow-500 text-white text-xl font-bold rounded-full py-4 px-9 focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out"
-              >
-                Whatsapp Now
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="text-white -mt-14 sm:-mt-24 lg:-mt-28 z-40 relative">
-          <svg
-            className="xl:h-40 xl:w-full"
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
-              fill="currentColor"
-            />
-          </svg>
-          <div className="bg-white w-full h-32 -mt-px" />
-        </div>
-      </div>
+      <HeroSection
+        badge="Trusted Scaffolding Supplier"
+        highlight="Rent"
+        title="Scaffolding"
+        subtitle="3-Hours Same Day Instant Delivery"
+      />
 
       {/* Main content */}
-      <div className="container px-4 lg:px-8 mx-auto max-w-7xl text-gray-700 overflow-hidden">
+      <div className="container px-4 lg:px-8 mx-auto max-w-7xl text-gray-700 overflow-hidden pb-20">
 
         {/* All-in-one heading */}
         <div data-aos="flip-up" className="max-w-xl mx-auto text-center mt-24">
+          <span className="brand-pill">Why Choose 777</span>
           <h2 className="font-bold text-darken my-3 text-3xl">
             All-In-One <span className="text-yellow-500">Scaffolding Supply.</span>
           </h2>
@@ -86,7 +27,7 @@ export default function Home() {
 
         {/* Feature cards */}
         <div className="grid md:grid-cols-3 gap-14 md:gap-5 mt-20">
-          <div data-aos="fade-up" className="bg-white shadow-xl p-6 text-center rounded-xl">
+          <div data-aos="fade-up" className="brand-card p-6 text-center rounded-xl">
             <div
               style={{ background: "#898989" }}
               className="rounded-full w-16 h-16 flex items-center justify-center mx-auto shadow-lg transform -translate-y-12"
@@ -96,7 +37,7 @@ export default function Home() {
             <h3 className="font-medium text-xl mb-3 lg:px-14 text-darken">Instant Delivery</h3>
             <p className="px-4 text-gray-500">Same day delivery services</p>
           </div>
-          <div data-aos="fade-up" data-aos-delay="150" className="bg-white shadow-xl p-6 text-center rounded-xl">
+          <div data-aos="fade-up" data-aos-delay="150" className="brand-card p-6 text-center rounded-xl">
             <div
               style={{ background: "#F48C06" }}
               className="rounded-full w-16 h-16 flex items-center justify-center mx-auto shadow-lg transform -translate-y-12"
@@ -106,7 +47,7 @@ export default function Home() {
             <h3 className="font-medium text-xl mb-3 lg:px-14 text-darken">Cheap &amp; Easy Rental</h3>
             <p className="px-4 text-gray-500">Easy booking &amp; Lowest Price Guarantee</p>
           </div>
-          <div data-aos="fade-up" data-aos-delay="300" className="bg-white shadow-xl p-6 text-center rounded-xl">
+          <div data-aos="fade-up" data-aos-delay="300" className="brand-card p-6 text-center rounded-xl">
             <div
               style={{ background: "#fa7373" }}
               className="rounded-full w-16 h-16 flex items-center justify-center mx-auto shadow-lg transform -translate-y-12"
@@ -121,6 +62,7 @@ export default function Home() {
         {/* Booking steps */}
         <div className="mt-28">
           <div data-aos="flip-down" className="text-center max-w-3xl mx-auto">
+            <span className="brand-pill">Quick Process</span>
             <h2 className="text-3xl font-bold text-darken mb-4">
               Easy <span className="text-yellow-500">Booking</span> in 5 Minutes
             </h2>
@@ -149,7 +91,7 @@ export default function Home() {
                       href="https://wa.me/+60182728777?text=Rent%20Scaffolding"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="lg:mx-0 bg-yellow-500 text-white text-xl font-bold rounded-full py-2 px-9 focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out"
+                      className="lg:mx-0 brand-button text-xl py-2 px-9 focus:outline-none"
                     >
                       Whatsapp Now
                     </a>
@@ -280,7 +222,7 @@ export default function Home() {
                 <div className="h-full flex flex-row items-center justify-start text-left">
                   <Image
                     alt="Jack base scaffolding component"
-                    className="shrink-0 rounded-lg w-48 h-48 object-cover object-center"
+                    className="shrink-0 rounded-lg w-28 h-28 sm:w-40 sm:h-40 md:w-48 md:h-48 object-cover object-center"
                     src="/img/jack-base.webp"
                     width={192}
                     height={192}
@@ -300,7 +242,7 @@ export default function Home() {
                 <div className="h-full flex flex-row items-center justify-start text-left">
                   <Image
                     alt="U-head scaffolding connector"
-                    className="shrink-0 rounded-lg w-48 h-48 object-cover object-center"
+                    className="shrink-0 rounded-lg w-28 h-28 sm:w-40 sm:h-40 md:w-48 md:h-48 object-cover object-center"
                     src="/img/u-head.webp"
                     width={192}
                     height={192}
@@ -320,7 +262,7 @@ export default function Home() {
                 <div className="h-full flex flex-row items-center justify-start text-left">
                   <Image
                     alt="Scaffolding clamp"
-                    className="shrink-0 rounded-lg w-48 h-48 object-cover object-center"
+                    className="shrink-0 rounded-lg w-28 h-28 sm:w-40 sm:h-40 md:w-48 md:h-48 object-cover object-center"
                     src="/img/clamp.webp"
                     width={192}
                     height={192}
@@ -340,7 +282,7 @@ export default function Home() {
                 <div className="h-full flex flex-row items-center justify-start text-left">
                   <Image
                     alt="Caster wheels with brake system"
-                    className="shrink-0 rounded-lg w-48 h-48 object-cover object-center"
+                    className="shrink-0 rounded-lg w-28 h-28 sm:w-40 sm:h-40 md:w-48 md:h-48 object-cover object-center"
                     src="/img/wheel.webp"
                     width={192}
                     height={192}
@@ -362,7 +304,7 @@ export default function Home() {
             <div data-aos="zoom-out-up" className="w-full items-center justify-center text-center max-w-3xl mx-auto mt-12">
               <a
                 href="/products"
-                className="mx-0 bg-yellow-500 text-white text-xl font-bold rounded-full py-4 px-9 focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out"
+                className="mx-0 brand-button text-xl py-4 px-9 focus:outline-none"
               >
                 View More Products
               </a>
@@ -373,6 +315,7 @@ export default function Home() {
         {/* Warehouse gallery */}
         <div data-aos="zoom-in-up" className="my-14">
           <div data-aos="flip-down" className="text-center max-w-3xl mx-auto">
+            <span className="brand-pill">Our Inventory</span>
             <h2 className="text-3xl font-bold text-darken mb-4">
               Our <span className="text-yellow-500">Warehouse</span>
             </h2>

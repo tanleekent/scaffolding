@@ -43,8 +43,8 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="text-center text-white py-3">
-          <p className="my-3 text-gray-400 text-sm">777 scaffolding &copy; 2026</p>
+        <div className="text-start md:text-center text-white py-3 px-8">
+          <p className="my-3 text-gray-400 text-sm">777 SCAFFOLDING SDN. BHD. (1459413H / 202201013716) &copy; {new Date().getFullYear()}</p>
         </div>
       </div>
     </footer>

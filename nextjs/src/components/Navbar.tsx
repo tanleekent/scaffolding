@@ -3,19 +3,22 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
-    <div className="w-full text-gray-700 bg-cream">
-      <div className="flex flex-col max-w-7xl px-8 mx-auto md:items-center md:justify-between md:flex-row">
-        <div className="flex flex-row items-center justify-between py-6">
+    <div className="w-full text-gray-700 bg-cream/90 backdrop-blur-md sticky top-0 z-100 border-b border-yellow-100">
+      <div className="flex flex-col max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto md:items-center md:justify-between md:flex-row">
+        <div className="flex flex-row items-center justify-between py-4 md:py-5">
           <div className="flex flex-row items-center">
-            <div className="relative md:mt-8">
+            <div className="relative">
               <Link
                 href="/"
                 className="text-lg relative pl-5 z-50 font-bold tracking-widest text-gray-900 rounded-lg focus:outline-none focus:shadow-outline"
+                onClick={() => setOpen(false)}
               >
                 Scaffolding
               </Link>
@@ -30,7 +33,7 @@ export default function Navbar() {
           </div>
 
           <button
-            className="rounded-lg md:hidden focus:outline-none focus:shadow-outline"
+            className="rounded-xl md:hidden focus:outline-none focus:shadow-outline border border-yellow-200 bg-white/70 p-2"
             onClick={() => setOpen(!open)}
             aria-label="Toggle menu"
           >
@@ -54,20 +57,39 @@ export default function Navbar() {
 
         <nav
           className={`${
-            open ? "h-auto scale-y-100" : "h-0 scale-y-0 md:h-auto md:scale-y-100"
-          } flex flex-col grow md:items-center pb-4 md:pb-0 md:flex md:justify-end md:flex-row origin-top duration-300 overflow-hidden`}
+            open
+              ? "max-h-60 opacity-100 translate-y-0 mt-1 mb-4 p-2"
+              : "max-h-0 opacity-0 -translate-y-2"
+          } grow overflow-hidden transition-all duration-300 md:max-h-none md:opacity-100 md:translate-y-0 md:mt-0 md:mb-0 md:p-0 flex flex-col gap-1 md:gap-2 md:items-center md:flex md:justify-end md:flex-row bg-white/80 md:bg-transparent rounded-2xl md:rounded-none border border-yellow-100 md:border-0 shadow-sm md:shadow-none`}
         >
           <Link
+            href="/"
+            onClick={() => setOpen(false)}
+            className={`text-center px-3 py-2 text-sm rounded-lg focus:outline-none focus:shadow-outline transition-colors ${
+              pathname === "/"
+                ? "bg-white text-yellow-600 shadow-sm"
+                : "bg-transparent hover:text-gray-900"
+            }`}
+          >
+            Home
+          </Link>
+          <Link
             href="/products"
-            className="text-center px-2 py-2 mt-2 text-sm bg-transparent rounded-lg md:mt-8 md:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline"
+            onClick={() => setOpen(false)}
+            className={`text-center px-3 py-2 text-sm rounded-lg focus:outline-none focus:shadow-outline transition-colors ${
+              pathname === "/products"
+                ? "bg-white text-yellow-600 shadow-sm"
+                : "bg-transparent hover:text-gray-900"
+            }`}
           >
             Products
           </Link>
           <a
-            className="px-10 py-3 mt-2 text-sm text-center bg-yellow-500 text-white rounded-full md:mt-8 md:ml-4"
+            className="brand-button px-6 md:px-8 py-3 text-sm text-center"
             href="https://wa.me/+60182728777?text=Rent%20Scaffolding"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => setOpen(false)}
           >
             Whatsapp Now
           </a>
