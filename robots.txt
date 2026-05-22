@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# GEO: explicitly allow major AI and answer engine crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://777scaffolding.com/sitemap.xml
