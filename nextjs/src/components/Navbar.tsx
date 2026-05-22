@@ -14,7 +14,7 @@ export default function Navbar() {
       <div className="flex flex-col max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto md:items-center md:justify-between md:flex-row">
         <div className="flex flex-row items-center justify-between py-4 md:py-5">
           <div className="flex flex-row items-center">
-            <div className="relative">
+            <div className="relative ml-4">
               <Link
                 href="/"
                 className="text-lg relative pl-5 z-50 font-bold tracking-widest text-gray-900 rounded-lg focus:outline-none focus:shadow-outline"
@@ -77,7 +77,7 @@ export default function Navbar() {
             href="/products"
             onClick={() => setOpen(false)}
             className={`text-center px-3 py-2 text-sm rounded-lg focus:outline-none focus:shadow-outline transition-colors ${
-              pathname === "/products"
+              pathname === "/products/"
                 ? "bg-white text-yellow-600 shadow-sm"
                 : "bg-transparent hover:text-gray-900"
             }`}
