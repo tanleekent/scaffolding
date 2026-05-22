@@ -12,6 +12,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://777scaffolding.com"),
   title: "777 Scaffolding | Quality Scaffolding Solutions in Semenyih",
   description:
     "777 Scaffolding provides high-quality scaffolding products. Fast delivery, certified safety, and expert support.",
